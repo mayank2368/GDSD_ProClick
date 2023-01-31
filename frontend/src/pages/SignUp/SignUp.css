@@ -1,0 +1,13 @@
+.textFields {
+  display: flex;
+  flex-direction: row;
+  margin-top: 13;
+  margin-right: 10;
+  margin-left: 10;
+  width: 28%;
+}
+
+.choice-button {
+  margin-left: 10;
+  margin-top: 10;
+}

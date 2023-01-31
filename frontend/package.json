@@ -1,0 +1,69 @@
+{
+  "name": "frontend",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@emotion/react": "^11.9.0",
+    "@emotion/styled": "^11.8.1",
+    "@mui/icons-material": "^5.8.2",
+    "@mui/lab": "^5.0.0-alpha.86",
+    "@mui/material": "^5.8.4",
+    "@reduxjs/toolkit": "^1.8.2",
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.3.0",
+    "@testing-library/user-event": "^13.5.0",
+    "antd": "^4.21.0",
+    "antd-img-crop": "^4.2.3",
+    "axios": "^0.27.2",
+    "file-saver": "^2.0.5",
+    "font-awesome": "^4.7.0",
+    "lottie-web": "^5.9.6",
+    "moment": "^2.29.3",
+    "query-string": "^6.13.8",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "react-dropzone": "^14.2.1",
+    "react-emoji": "^0.5.0",
+    "react-redux": "^8.0.2",
+    "react-router-dom": "^6.3.0",
+    "react-scripts": "5.0.1",
+    "react-scroll-to-bottom": "^4.1.0",
+    "react-speech-recognition": "^3.9.1",
+    "socket.io-client": "^2.3.0",
+    "string-to-color": "latest",
+    "uifx": "^2.0.7",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build && xcopy ./build/ ../NodeApp/public /u",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "export": "cp -r ./build/ ../NodeApp/public"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "eslint": "^8.17.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.30.0",
+    "prettier": "^2.6.2"
+  }
+}

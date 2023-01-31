@@ -1,0 +1,25 @@
+.btn-primary {
+  background-color: #009999;
+  border: 0;
+  border-radius: 5px;
+  padding: 12px 50px 14px;
+  font-size: 1.2rem;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #086969;
+}
+
+.btn {
+  border-radius: 15;
+}
+.tm-btn-big {
+  padding: 12px 90px 14px;
+}
+
+@media (max-width: 400px) {
+  .tm-btn-big {
+    padding: 12px 50px 14px;
+  }
+}

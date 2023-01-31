@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">14.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <Name>NodeApp</Name>
+    <RootNamespace>NodeApp</RootNamespace>
+    <SaveNodeJsSettingsInProjectFile>True</SaveNodeJsSettingsInProjectFile>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>23f06e79-796a-4bc5-93ec-fc8e275a8c05</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>app.js</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <NodejsPort>4000</NodejsPort>
+    <StartWebBrowser>True</StartWebBrowser>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include=".env" />
+    <Content Include="app.js" />
+    <Content Include="config\mongodatabase.config.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="config\mysqldatabase.config.js">
+      <SubType>Code</SubType>
+    </Content>
+    <None Include="Properties\PublishProfiles\proclick2022 - Web Deploy.pubxml" />
+    <Content Include="Properties\PublishProfiles\proclick2022 - Web Deploy.pubxml.user" />
+    <Content Include="Properties\ServiceDependencies\proclick2022 - Web Deploy\profile.arm.json" />
+    <Content Include="public\asset-manifest.json" />
+    <Content Include="public\favicon.ico" />
+    <Content Include="public\index.html" />
+    <Content Include="public\logo192.png" />
+    <Content Include="public\logo512.png" />
+    <Content Include="public\manifest.json" />
+    <Content Include="public\robots.txt" />
+    <Content Include="public\static\css\main.7149253e.css" />
+    <Content Include="public\static\css\main.7149253e.css.map" />
+    <Content Include="public\static\js\787.cda612ba.chunk.js" />
+    <Content Include="public\static\js\787.cda612ba.chunk.js.map" />
+    <Content Include="public\static\js\main.7c4eb729.js" />
+    <Content Include="public\static\js\main.7c4eb729.js.LICENSE.txt" />
+    <Content Include="public\static\js\main.7c4eb729.js.map" />
+    <Content Include="public\static\media\accomplished-579.c9572b2ecc1aa4b6aafe.mp3" />
+    <Content Include="public\static\media\bg.b2258ba7d323bd0d95f2.png" />
+    <Content Include="public\static\media\fontawesome-webfont.1e59d2330b4c6deb84b3.ttf" />
+    <Content Include="public\static\media\fontawesome-webfont.20fd1704ea223900efa9.woff2" />
+    <Content Include="public\static\media\fontawesome-webfont.8b43027f47b20503057d.eot" />
+    <Content Include="public\static\media\fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg" />
+    <Content Include="public\static\media\fontawesome-webfont.f691f37e57f04c152e23.woff" />
+    <Content Include="yarn.lock" />
+    <Content Include="middleware\userMiddleware.js" />
+    <Content Include="models\chat.model.js" />
+    <Content Include="models\conversation.js" />
+    <Content Include="models\image-data.model.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="models\review.model.js" />
+    <Content Include="models\sales.model.js" />
+    <Content Include="models\user.model.js" />
+    <Content Include="package-lock.json" />
+    <Content Include="prod.env" />
+    <Content Include="routes\chat.routes.js" />
+    <Content Include="routes\conversation.routes.js" />
+    <Content Include="routes\image-data.routes.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="routes\index.js" />
+    <Content Include="package.json" />
+    <Content Include="README.md" />
+    <Content Include="routes\reviews.routes.js" />
+    <Content Include="routes\sales.routes.js" />
+    <Content Include="routes\socketUser.js" />
+    <Content Include="routes\user.routes.js" />
+    <Content Include="services\chat.service.js" />
+    <Content Include="services\conversation.service.js" />
+    <Content Include="services\image-data.service.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="services\reviews.service.js" />
+    <Content Include="services\sales.service.js" />
+    <Content Include="services\user.service.js" />
+    <Content Include="uploads\images\2022-06-09T14-21-31.390ZCapture.PNG" />
+    <Content Include="uploads\images\2022-06-12T20-15-12.304ZCapture.PNG" />
+    <Content Include="uploads\images\2022-06-12T20-54-50.293ZCapture.PNG" />
+    <Content Include="uploads\images\2022-06-12T20-59-13.432ZCapture.PNG" />
+    <Content Include="uploads\images\2022-06-12T21-04-08.028ZCapture.PNG" />
+    <Content Include="uploads\images\2022-06-12T21-05-07.539ZCapture.PNG" />
+    <Content Include="uploads\images\2022-06-13T07-00-28.487ZCapture.PNG" />
+    <Content Include="uploads\images\2022-06-13T07-03-34.385ZCapture.PNG" />
+    <Content Include="uploads\images\2022-06-13T07-04-58.280ZCapture.PNG" />
+    <Content Include="uploads\images\2022-06-13T07-26-38.570ZCapture.PNG" />
+    <Content Include="uploads\images\2022-06-13T14-35-58.274ZCapture.PNG" />
+    <Content Include="uploads\images\2022-06-17T11-13-35.842Z1.PNG" />
+    <Content Include="views\index.pug" />
+    <Content Include="views\layout.pug" />
+    <Content Include="views\error.pug" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="config\" />
+    <Folder Include="middleware\" />
+    <Folder Include="models\" />
+    <Folder Include="Properties\ServiceDependencies\" />
+    <Folder Include="Properties\ServiceDependencies\proclick2022 - Web Deploy\" />
+    <Folder Include="public\static\" />
+    <Folder Include="public\static\css\" />
+    <Folder Include="public\static\js\" />
+    <Folder Include="public\static\media\" />
+    <Folder Include="uploads\" />
+    <Folder Include="Properties\" />
+    <Folder Include="Properties\PublishProfiles\" />
+    <Folder Include="services\" />
+    <Folder Include="public\" />
+    <Folder Include="routes\" />
+    <Folder Include="uploads\images\" />
+    <Folder Include="views\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config" />
+  </ItemGroup>
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsToolsV2.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48022/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
